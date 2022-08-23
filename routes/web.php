@@ -17,8 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin', function () {
-    return view('backend.dashboard')->name("dashboard");
+    return view('backend.dashboard');
 });
-Route::get('/admin/addproduct', function () {
-    return view('backend.pages.product.addproduct');
-})->name("addproduct");

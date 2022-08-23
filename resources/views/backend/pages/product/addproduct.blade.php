@@ -30,4 +30,5 @@
         <input type="text" class="form-control">
     </div>
 </form>
+
 @endsection
