@@ -16,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/admin', function () {
     return view('backend.dashboard');
-});
+})->name("dashboard");
+
+Route::get('/admin/addproduct', function () {
+    return view('backend.pages.product.addproduct');
+})->name("addproduct");
+
+Route::get('/admin/manageproduct', function () {
+    return view('backend.pages.product.manageproduct');
+})->name("manageproduct");
+
